@@ -8,7 +8,6 @@ import SearchRestaurantHandler from '../../utils/search-restaurant-handler';
 const Home = {
   async render() {
     return `
-    <a class="skip_link" href="#restaurants">Skip To Content</a>
       <div class="hero">
         <div class="hero_inner">
           <h1 tabindex="0" class="hero_title">Welcome to <br><span class="span_title">ResTour Apps</span></h1>
@@ -39,7 +38,7 @@ const Home = {
     const inputElement = document.getElementById('search-favorite-restaurant-input');
 
     SkipLink.init({
-      mainElement: restaurantsContainer,
+      mainElement: inputElement,
     });
 
     inputElement.addEventListener('input', (event) => {

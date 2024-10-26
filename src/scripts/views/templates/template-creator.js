@@ -6,7 +6,7 @@ const createRestaurantItemTemplate = (restaurant) => `
     <img 
       class="lazyload item_image"
       tabindex="0" 
-      src='${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}' 
+      data-src='${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}' 
       alt='Gambar Resto ${restaurant.name}'
     />
     <div class='item_subContainer1'>
