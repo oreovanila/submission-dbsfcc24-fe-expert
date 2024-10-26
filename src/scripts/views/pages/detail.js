@@ -12,7 +12,6 @@ const Detail = {
     document.title = 'Detail - ResTour Apps';
 
     return `
-      <a class="skip_link" href="#restaurant">Skip To Content</a>
       <div id="mainContent"></div>
       <div id="restaurant" class="restaurant"></div>
       <div id="likeButtonContainer"></div>

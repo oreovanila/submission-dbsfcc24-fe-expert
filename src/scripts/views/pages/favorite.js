@@ -11,7 +11,6 @@ const Favorite = {
     document.title = 'Favorite - ResTour Apps';
 
     return `
-    <a class="skip_link" href="#mainContent">Skip To Content</a>
       <div id="favorite_items_container">
         <h2 tabindex="0" class="main_title">Favorite Restaurant</h2>
         <div id="search-container">
