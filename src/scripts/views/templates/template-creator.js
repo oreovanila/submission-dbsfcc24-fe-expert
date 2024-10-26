@@ -26,8 +26,7 @@ const createRestaurantDetailTemplate = (restaurant) => `
   <img 
     tabindex="0" 
     src='${CONFIG.BASE_LARGE_IMAGE_URL + restaurant.pictureId}' 
-    alt='Gambar Resto ${restaurant.name}'
-    onload="this.previousElementSibling.style.display='none'"
+    alt='Gambar Resto ${restaurant.name}'"
   />
 
   <p tabindex="0" class="detail-address">📍 ${restaurant.address}, ${restaurant.city}</p>
