@@ -1,0 +1,177 @@
+@import './variables';
+@import './mixins';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.restaurant {
+  padding: 1rem;
+
+  h2 {
+    color: $color-darkOrange;
+    font-family: $font-segoe;
+    text-align: center;
+    margin-bottom: 1rem;
+
+    @media screen and (min-width: 605px) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  img {
+    display: block;
+    width: 100%;
+
+    margin: 0 auto;
+  }
+
+  .detail-address {
+    text-align: right;
+    padding: 10px;
+    color: $color-orange;
+  }
+
+  h3 {
+    color: $color-orange;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    line-height: 24px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin-left: 1rem;
+
+    li {
+      padding-block: 5px;
+    }
+  }
+
+  h4 {
+    margin-top: 0.5rem;
+  }
+
+  .menusContainer {
+    margin-left: 2rem;
+  }
+
+  @media screen and (min-width: 605px) {
+    padding: 2rem;
+  }
+
+  @media screen and (min-width: 1000px) {
+    padding-inline: 3rem;
+  }
+}
+
+.additional-information-container, 
+.reviews-container,
+.detail-desc {
+  background-color: $color-gray;
+  margin-block: 1rem;
+  border-radius: 5px;
+}
+
+.detail-desc {
+  margin-top: unset;
+}
+
+.additional-information-container,
+.detail-desc {
+  padding: 5px 10px 20px;
+}
+
+.reviews-container {
+  padding: 5px 10px 10px;
+  height: fit-content;
+
+  h3 {
+    color: $color-orange;
+  }
+
+  .detail-rating {
+    margin-block: 5px;
+  }
+
+  div {
+    overflow-y: auto;
+    max-height: 800px;
+    margin-bottom: 10px;
+  }
+
+  #add-review-button {
+    border: 1px solid $color-orange;
+    color: $color-orange;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+}
+
+.review-container {
+  background-color: $color-white;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  .review-name, .review-post {
+    font-size: 13px;
+  }
+
+  .review-body {
+    margin-top: 1rem;
+  }
+}
+
+input, textarea {
+  width: 100%;
+  min-width: 44px;
+  min-height: 44px;
+  font-size: 16px;
+  margin-block: 5px;
+  padding-inline: 8px;
+}
+
+textarea {
+  resize: vertical;
+  padding-block: 8px;
+}
+
+.like {
+  @include display(flex);
+  width: 55px;
+  height: 55px;
+  background-color: $color-orange;
+  
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+  
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 917px) {
+  .detail-restaurant-container {
+    display: grid;
+    grid-template-columns: auto 350px;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .detail-restaurant-container {
+    display: grid;
+    grid-template-columns: auto 500px;
+  }
+}

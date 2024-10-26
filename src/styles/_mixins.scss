@@ -1,0 +1,33 @@
+@mixin bg-opacity($r, $g, $b, $a) {
+  background-color: rgba($r, $g, $b, $a);
+}
+
+@mixin display($diplay, $align: center, $justify: center) {
+  display: $diplay;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin font-fam-weight($family, $weight) {
+  font-family: $family;
+  font-weight: $weight;
+}
+
+@mixin font-weight-size($weight, $size) {
+  font-weight: $weight;
+  font-size: $size;
+}
+
+@mixin font-size-line($size, $height) {
+  font-size: $size;
+  line-height: $height;
+}
+
+@mixin translate($x, $y) {
+  transform: translate($x, $y);
+  transition: transform 0.3s ease-in-out;
+}
+
+@mixin lightenColor($property, $color, $ligthness) {
+  #{$property}: lighten($color, $ligthness);
+}
