@@ -23,9 +23,9 @@ export default [
       '**/build/**',
       '**/*.min.js',
       '**/jest.config.js',
-      '**/webpack.common.js', // Mengabaikan webpack.common.js
-      '**/webpack.prod.js', // Mengabaikan webpack.prod.js
-      '**/webpack.dev.js', // Mengabaikan webpack.dev.js
+      '**/webpack.common.js',
+      '**/webpack.prod.js',
+      '**/webpack.dev.js',
     ],
   },
 ];

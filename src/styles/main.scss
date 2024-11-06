@@ -79,6 +79,11 @@ a {
   font: 700 24px/20px $font-segoe;
   padding-inline: 10px;
   order: 1;
+
+  span {
+    font: 700 24px/20px $font-segoe;
+    color: $color-white;  
+  }
 }
 
 .drawer {
@@ -236,7 +241,7 @@ a {
   }
 }
 
-.span_title {
+.span_title{
   color: $color-orange;
 }
 
