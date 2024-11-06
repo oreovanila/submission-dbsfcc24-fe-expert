@@ -10,8 +10,8 @@ const Home = {
     return `
       <div class="hero">
         <div class="hero_inner">
-          <h1 tabindex="0" class="hero_title">Welcome to <br><span class="span_title">ResTour Apps</span></h1>
-          <p class="hero_description">Explore, Discover, and Savor Delights from the Best Restaurants</p>
+          <h1 tabindex="0" class="hero_title">Find Your Best <span class="span_title">Restaurant</span> Here</h1>
+          <p class="hero_description">Discover top dining spots near you with ease, from local favorites to international cuisines</p>
           <a class="hero_button" id="start_explore" href="#main_title">Start Exploring</a>
         </div>
       </div>
