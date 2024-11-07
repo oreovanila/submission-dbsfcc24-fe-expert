@@ -160,6 +160,14 @@ textarea {
   cursor: pointer;
 }
 
+.swal2-title {
+  color: $color-black;
+}
+
+.swal2-confirm {
+  background-color: $color-orange;
+}
+
 @media screen and (min-width: 917px) {
   .detail-restaurant-container {
     display: grid;

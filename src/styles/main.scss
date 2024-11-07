@@ -60,7 +60,7 @@ a {
   padding: 1rem 10px;
   position: sticky;
   top: 0;
-  background-color: $color-black-opacity9;
+  background-color: $color-black;
 
   @media screen and (min-width: 611px) {
     @include display(flex, center, space-between);
@@ -92,8 +92,7 @@ a {
   left: 0;
   top: 100%;
   width: 200px;
-  box-shadow: -1px 2px 8px -3px $color-orange;
-  background-color: $color-black-opacity8;
+  background-color: $color-black;
 
   @media screen and (min-width: 611px) {
     width: 60%;
@@ -161,8 +160,8 @@ a {
 }
 
 #hamburger {
-  font-size: 20px;
-  color: $color-white;
+  @include font-weight-size(bold, 24px);
+  
   transition: color 0.3s ease-in-out;
   background-color: transparent;
   border: none;
@@ -216,6 +215,10 @@ a {
   max-height: auto;
   background-color: rgba(0, 0, 0, 0.4);
   padding: 1rem;
+
+  @media screen and (min-width: 611px) {
+    padding: 1rem 6rem;
+  }
 }
 
 .hero, .hero_inner {
