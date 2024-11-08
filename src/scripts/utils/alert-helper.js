@@ -10,6 +10,9 @@ const AlertHelper = {
       background: '#F0A500',
       color: '#ffffff',
       backdrop: false,
+      customClass: {
+        popup: 'swal-custom-position',
+      },
     });
   },
 

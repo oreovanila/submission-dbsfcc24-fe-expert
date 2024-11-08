@@ -168,6 +168,13 @@ textarea {
   background-color: $color-orange;
 }
 
+.swal-custom-position {
+  margin-top: 4rem;
+  padding-block: 1rem 2rem;
+
+  @include display(inline-flex);
+}
+
 @media screen and (min-width: 917px) {
   .detail-restaurant-container {
     display: grid;
