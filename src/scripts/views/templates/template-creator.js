@@ -24,8 +24,9 @@ const createRestaurantItemTemplate = (restaurant) => `
 const createRestaurantDetailTemplate = (restaurant) => `
   <h2 tabindex="0" class="detail-title">${restaurant.name}</h2>
   <img 
+    class="lazyload"
     tabindex="0" 
-    src='${CONFIG.BASE_LARGE_IMAGE_URL + restaurant.pictureId}' 
+    data-src='${CONFIG.BASE_LARGE_IMAGE_URL + restaurant.pictureId}' 
     alt='Gambar Resto ${restaurant.name}'"
   />
 
